@@ -4,7 +4,7 @@ import pandas as pd
 url="https://sa.aqar.fm/graphql"
 #url api
 
-def get_d(cat,direction): #fun get all distrcts
+def get_d(cat,direction)--> list: #fun get all distrcts
   districts=[]
   payload={
   "operationName": "getAllDistricts",
@@ -28,25 +28,25 @@ def search_data(cat,direction,dist):# fun search by direction and districts
 	"operationName": "findListings",
 	"variables": {
 	"size": 20,
-    "from": 0,
-    "sort": {
-    "create_time": "desc",
-     "has_img": "desc"
-     },
-     "where": {
-      "category": {
-        "eq": cat
-      },
-      "city_id": {
-        "eq": 21
-      },
-      "direction_id": {
-        "eq": direction
-      },
-      "district_id": {
-      "eq": dist
-      }}
-      },
+        "from": 0,
+        "sort": {
+        "create_time": "desc",
+        "has_img": "desc"
+        },
+        "where": {
+        "category": {
+	"eq": cat
+	},
+        "city_id": {
+	"eq": 21
+	},
+      	"direction_id": {
+	"eq": direction
+	},
+	"district_id": {
+        "eq": dist
+        }}
+        },
 	"query": "query findListings($size: Int, $from: Int, $sort: SortInput, $where: WhereInput, $polygon: [LocationInput!]) {\n  Web {\n    find(size: $size, from: $from, sort: $sort, where: $where, polygon: $polygon) {\n      ...WebResults\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment WebResults on WebResults {\n  listings {\n    user_id\n    id\n    uri\n    title\n    price\n    content\n    imgs\n    refresh\n    category\n    beds\n    livings\n    wc\n    area\n    type\n    street_width\n    age\n    last_update\n    street_direction\n    ketchen\n    ac\n    furnished\n    location {\n      lat\n      lng\n      __typename\n    }\n    path\n    user {\n      review\n      img\n      name\n      phone\n      iam_verified\n      rega_id\n      __typename\n    }\n    native {\n      logo\n      title\n      image\n      description\n      external_url\n      __typename\n    }\n    rent_period\n    city\n    district\n    width\n    length\n    advertiser_type\n    create_time\n    __typename\n  }\n  total\n  __typename\n}\n"
 	}
 	data=requests.get(url,json=pay)
