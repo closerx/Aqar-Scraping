@@ -14,9 +14,9 @@
 python scraping.py
 ```
 ---
-`Price` | `area` | `bedroom` |`Price` | `area` | `bedroom`
+`Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width`
 --- | --- | --- | --- | --- | ---
-1 | 2 | 3 | 4 | 5 | 6
+280000 | 225 | 4 | 4 | 5 | 6
 
 
 - [Aqar website](https://sa.aqar.fm)
