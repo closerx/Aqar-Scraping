@@ -21,4 +21,4 @@ city_id = 66
 - [Aqar website](https://sa.aqar.fm)
 ---
 #### By help Wejdan
-- [Wejdan](https://t.me/@doublyou)
+- [Wejdan](https://t.me/doublyou)
