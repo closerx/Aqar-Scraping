@@ -14,8 +14,8 @@
 python scraping.py
 ```
 ---
-`Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width`
---- | --- | --- | --- | --- | ---
+`Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width` | `house_age` | `last_update` | `direction` | `ketchen`
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 280000 | 225 | 4 | 4 | 5 | 6
 
 
