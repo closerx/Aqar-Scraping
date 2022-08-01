@@ -11,7 +11,7 @@
 ## Usage
 
 ```bash
-python scraping.py
+python app.py
 ```
 ---
 `Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width` | `house_age` | `last_update` | `direction` | `ketchen`
