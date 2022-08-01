@@ -19,3 +19,5 @@ city_id = 66
 ```
 > change number of city 
 - [Aqar website](https://sa.aqar.fm)
+
+- [By help Wejdan](https://t.me/@doublyou)
