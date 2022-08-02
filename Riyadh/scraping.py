@@ -4,7 +4,7 @@ import pandas as pd
 url="https://sa.aqar.fm/graphql"
 #url api
 
-def get_d(cat,direction)--> list: #fun get all distrcts
+def get_d(cat,direction)-> list: #fun get all distrcts
   districts=[]
   payload={
   "operationName": "getAllDistricts",
@@ -102,8 +102,11 @@ def main():
   "شقه":21
   }
 	print(20*"=+")
+	print(r"                  <<للايجار = 0>>")
+	print(r"                  <<للبيع = 1>>")
+	print(20*"=+")
 	for i,x in enumerate(categorys.keys()):
-		print(f"{i}-{x}")
+		print(f"                        {i}-{x}")
 	print(20*"=+")
 	
 	x=input("Enter Category String =")
