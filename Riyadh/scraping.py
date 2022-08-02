@@ -106,7 +106,7 @@ def main():
 	print(r"                  <<للبيع = 1>>")
 	print(20*"=+")
 	for i,x in enumerate(categorys.keys()):
-		print(f"                        {i}-{x}")
+		print(f"                        #-{x}")
 	print(20*"=+")
 	
 	x=input("Enter Category String =")
