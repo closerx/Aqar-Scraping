@@ -16,9 +16,9 @@
 python app.py
 ```
 ---
-`Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width` | `house_age` | `last_update` | `direction` | `ketchen`
---- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-280000 | 225 | 4 | 4 | 5 | 6
+`Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width` | `house_age` | `last_update` | `direction` | `ketchen` | `latitude` | `longitude` 
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+280000 Rial| 225 m | 4 | 4 | 5 | 6 m | 5 years | 1659410139 | nun | False or True | 24.855249 | 24.855232
 
 
 - [Aqar website](https://sa.aqar.fm)
