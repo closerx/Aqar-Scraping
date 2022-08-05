@@ -16,11 +16,7 @@ python scraping.py
 280000 Rial| حي النرجس	 | 225 M² | 4 | 4 | 5 | 6 M | 5 Years | 1659410139 | nun | False or True | 24.855249 | 24.855232
  
 ---
-### if want Jeddah 
-```
-city_id = 66
-```
-> change number of city 
+
 - [Aqar website](https://sa.aqar.fm)
 ---
 #### By help Wejdan
