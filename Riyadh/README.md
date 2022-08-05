@@ -11,10 +11,10 @@
 ```bash
 python scraping.py
 ```
-`Price` | `area` | `bedroom` |`wc` | `living_room` | `street_width` | `house_age` | `last_update` | `direction` | `ketchen` | `latitude` | `longitude` 
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-280000 Rial| 225 M² | 4 | 4 | 5 | 6 M | 5 Years | 1659410139 | nun | False or True | 24.855249 | 24.855232
-
+`Price` | `district` | `area` | `bedroom` |`wc` | `living_room` | `street_width` | `house_age` | `last_update` | `direction` | `ketchen` | `latitude` | `longitude` 
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+280000 Rial| حي النرجس	 | 225 M² | 4 | 4 | 5 | 6 M | 5 Years | 1659410139 | nun | False or True | 24.855249 | 24.855232
+ 
 ---
 ### if want Jeddah 
 ```
