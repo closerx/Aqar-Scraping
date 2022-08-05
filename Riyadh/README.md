@@ -1,5 +1,7 @@
 
-![alt text](https://aqd.com.sa/wp-content/uploads/2020/10/aqar-logo-300x300.png)
+<p align='center'>
+  <img src='https://aqd.com.sa/wp-content/uploads/2020/10/aqar-logo-300x300.png' style='text-algan:center'>
+</p>
 
 ## Aqar Scraping Riyadh
 ---
