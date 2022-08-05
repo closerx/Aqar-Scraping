@@ -4,11 +4,8 @@
 </p>
 
 
-# Aqar-scraping
+# Aqar-Scraping
 > يعتبر تطبيق عقار واحد من أشهر التطبيقات المتخصصة ببيع العقارات بالمملكة العربية السعودية، فهذا التطبيق يساعد المستخدمين في معرفة العقارات المتاحة بالمملكة العربية السعودية سواء كانت للبيع أو للتأجير، ولقد أشهر موقع حراج الشهير عام 2014 على إطلاق موقع وتطبيق عقار المتخصص بتسويق العقارات، ويوفر هذا التطبيق لمستخدميه العديد من الخدمات والأهداف المميزة التي تساعدهم بسهولة على شراء وبيع العقارات بالمملكة العربية السعودية.
----
-### Dataset Description: 
-- The dataset represent the price of housing (Villa, Apartment, and chalet) in different city in Saudi Arabia
 ---
 ## <a href="https://closerx.github.io/aqar-website/" >Aqar Dataset Website</a>
 ---
