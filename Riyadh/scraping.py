@@ -4,10 +4,6 @@ import requests,csv
 class Aqar_API:
 	def __init__(self):
 		self.url_api="https://sa.aqar.fm/graphql"
-		self.count=""
-		self.category=""
-		self.city=""
-		self.dirction=""
 		
 	def length(self):
 		payload={
