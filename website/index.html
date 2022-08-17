@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aqar | Dataset</title>
+  <meta name="description" content="web scraping saqar website">
+  <meta name="author" content="Hadi Hakami">
+  <meta name="keywords" content="saqar" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Aqar Dataset</h1>
+      <p class="lead">
+        موقع لمساعدة المختصين في علم البيانات و تسويقية وبعض المشاريع التقنية
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class=" col">
+        <div class="card">
+          <h3 class="card-header">Categories</h3>
+          <div class="card-block">
+            <form action="/" class="form-group">
+              <select class="form-control dropdown" id="dropdown-search">
+                <option value='select J' selected required>All</option>
+
+                Bing dropdown
+                <option value='select J,K,B where B contains "Bing"'>شقق-للإيجار </option>
+                <option value='select J,K,B where B contains "Shopping"'>شقق-للبيع</option>
+                <option value='select J,K,B where B contains "UET"'>اراضي-للإيجار </option>
+
+                Gemini dropdown
+                <option value='select * where C contains "Gemini"'>اراضي-للبيع</option>
+                <option value='select * where C contains "Conversion Tracking"'>فلل-للإيجار</option>
+                <option value='select * where C contains "native"'>فلل-للبيع</option>
+                <option value='select * where C contains "Search"'>دور-للإيجار</option>
+                <option value='select * where C contains "sponsored email"'>دور-للبيع</option>
+
+                DS dropdown
+                <option value='select J,D where D contains ""'>عمارة-للإيجار</option>
+                <option value='select J,D where D contains "Adaptive Shopping"'>عمارة-للبيع</option>
+                <option value='select J,D where D contains "Alerts"'>محل-للإيجار</option>
+                <option value='select J,D where D contains "Attribution"'>محل-لبيع</option>
+                <option value='select J,D where D contains "Bidding Strategies"'>بيت-للإيجار</option>
+                <option value='select J,D where D contains "Budget Pacing"'>بيت-للبيع</option>
+                <option value='select J,D where D contains "Bulksheets"'>استراحة-للإيجار</option>
+                <option value='select J,D where D contains "Business Data"'>استراحة-للبيع</option>
+                <option value='select J,D where D contains "Dynamic Labels"'>مكتب</option>
+                <option value='select J,D where D contains "Baidu Accounts via DS"'>مزرعة</option>
+                <option value='select J,D where D contains "Bing Shopping via DS"'>مستودع</option>
+                <option value='select J,D where D contains "Bing Accounts via DS"'>مخيم</option>
+                <option value='select J,D where D contains "Gemini Accounts via DS"'>شاليه</option>
+                <option value='select J,D where D contains "Yahoo Japan Accounts via DS"'>غرف مفروشة</option>
+                <option value='select J,D where D contains "Yandex Accounts via DS"'>شقه</option>
+
+
+              </select>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Filter -->
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <h3 class="card-header">Filter</h3>
+          <div class="card-block">
+            <form>
+
+              <div class="form-group">
+                <label for="dropdown-bing">Riyadh </label>
+                <select class="form-control dropdown" id="dropdown-bing">
+                  <option value='select J' selected></option>
+                  <option value='select J,K,B where B contains "Bing"'>شمال</option>
+                  <option value='select J,K,B where B contains "Shopping"'>جنوب</option>
+                  <option value='select J,K,B where B contains "UET"'>شرق</option>
+                  <option value='select J,K,B where B contains "UET"'>غرب</option>
+                  <option value='select J,K,B where B contains "UET"'>وسط</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-gemini">Jeddah</label>
+                <select class="form-control dropdown" id="dropdown-gemini">
+                  <option value='select J' selected></option>
+                  <option value='select * where C contains "Gemini"'>شمال</option>
+                  <option value='select * where C contains "Conversion Tracking"'>جنوب</option>
+                  
+                </select>
+              </div><br><hr style="width:50%;text-align:left;margin-left:130px;background:var(--mycolor2)";>
+
+              <div class="form-group">
+                <label for="dropdown-ds">DS</label>
+                <select class="form-control dropdown" id="dropdown-ds">
+                  <option value='select J' selected></option>
+                  <option value='select J,D where D contains ""'>Any DS</option>
+                  <option value='select J,D where D contains "Adaptive Shopping"'>Adaptive Shopping</option>
+                  <option value='select J,D where D contains "Alerts"'>Alerts</option>
+                  <option value='select J,D where D contains "Attribution"'>Attribution</option>
+                  <option value='select J,D where D contains "Bidding Strategies"'>Bidding Strategies</option>
+                  <option value='select J,D where D contains "Budget Pacing"'>Budget Pacing</option>
+                  <option value='select J,D where D contains "Bulksheets"'>Bulksheets</option>
+                  <option value='select J,D where D contains "Business Data"'>Business Data</option>
+                  <option value='select J,D where D contains "Dynamic Labels"'>Dynamic Labels</option>
+                  <option value='select J,D where D contains "Baidu Accounts via DS"'>Engine: Baidu</option>
+                  <option value='select J,D where D contains "Bing Shopping via DS"'>Engine: Bing Shopping</option>
+                  <option value='select J,D where D contains "Bing Accounts via DS"'>Engine: Bing</option>
+                  <option value='select J,D where D contains "Gemini Accounts via DS"'>Engine: Gemini</option>
+                  <option value='select J,D where D contains "Yahoo Japan Accounts via DS"'>Engine: Yahoo Japan</option>
+                  <option value='select J,D where D contains "Yandex Accounts via DS"'>Engine: Yandex</option>
+                  <option value='select J,D where D contains "Executive Reporting"'>Executive Reporting</option>
+                  <option value='select J,D where D contains "Floodlight Tracking"'>Floodlight Tracking (any)</option>
+                  <option value='select J,D where D contains "Floodlight Tracking (with u-variables)"'>Floodlight Tracking (with u-variables)</option>
+                  <option value='select J,D where D contains "Floodlight Tracking (without u-variables)"'>Floodlight Tracking (without u-variables)</option>
+                  <option value='select J,D where D contains "Formula columns"'>Formula columns</option>
+                  <option value='select J,D where D contains "General Account Management"'>General Account Management</option>
+                  <option value='select J,D where D contains "Inventory Management"'>Inventory Management</option>
+                  <option value='select J,D where D contains "Landing Page Tests"'>Landing Page Tests</option>
+                  <option value='select J,D where D contains "Linking Engine Accounts to DS"'>Linking Engine Accounts to DS</option>
+                  <option value='select J,D where D contains "Search to Display Remarketing"'>Search to Display Remarketing</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-facebook">Facebook</label>
+                <select class="form-control dropdown" id="dropdown-facebook">
+                  <option value='select J' selected></option>
+                  <option value='select J,E where E contains ""'>Any Facebook</option>
+                  <option value='select J,E where E contains "Canvas"'>Canvas</option>
+                  <option value='select J,E where E contains "Dynamic remarketing"'>Dynamic remarketing</option>
+                  <option value='select J,E where E contains "Instagram"'>Instagram</option>
+                  <option value='select J,E where E contains "Video ads"'>Video ads</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-adwords">Adwords</label>
+                <select class="form-control dropdown" id="dropdown-adwords">
+                  <option value='select J' selected></option>
+                  <option value='select J,F where F contains "Dynamic remarketing"'>Display - Dynamic Remarketing</option>
+                  <option value='select J,F where F contains "Standard remarketing"'>Display - Standard Remarketing</option>
+                  <option value='select J,F where F contains "Custom affinity"'>Audiences - Custom Affinity</option>
+                  <option value='select J,F where F contains "Customer match"'>Audiences - Customer Match</option>
+                  <option value='select J,F where F contains "GA remarketing"'>Audiences - GA remarketing</option>
+                  <option value='select J,F where F contains "Similar users for search"'>Audiences - Similar Users</option>
+                  <option value='select J,F where F contains "Household income targets"'>Targeting - Household income targets</option>
+                  <option value='select J,F where F contains "Other interesting location targeting"'>Targeting - Non standard location targeting</option>
+                  <option value='select J,F where F contains "Non-remarketing Display (on GDN)"'>Display - Non Remarketing Display</option>
+                  <option value='select J,F where F contains "Responsive ads"'>Ads - Responsive ads</option>
+                  <option value='select J,F where F contains "Lightbox ads"'>Ads - Lightbox</option>
+                  <option value='select J,F where F contains "Gmail"'>Campaigns - Gmail</option>
+                  <option value='select J,F where F contains "Shopping"'>Campaigns - Shopping</option>
+                  <option value='select J,F where F contains "Merchant Centre"'>Feeds - Merchant Centre</option>
+                  <option value='select J,F where F contains "Other feed changes"'>Feeds - Other feed changes</option>
+                  <option value='select J,F where F contains "Local inventory ads"'>Ads - Local Inventory</option>
+                  <option value='select J,F where F contains "DSAs"'>Campaigns - DSAs</option>
+                  <option value='select J,F where F contains "Feed based DSAs"'>Campaigns - Feed based DSAs</option>
+                  <option value='select J,F where F contains "Call only campaigns"'>Campaigns - Call Only</option>
+                  <option value='select J,F where F contains "Universal app campaigns"'>Apps - Universal app campaigns</option>
+                  <option value='select J,F where F contains "App engagement"'>Apps - App engagement</option>
+                  <option value='select J,F where F contains "Offline conversion tracking"'>Conversions / Tracking - Offline conversion tracking</option>
+                  <option value='select J,F where F contains "In store visits"'>Conversions / Tracking - In store visits</option>
+                  <option value='select J,F where F contains "Reponsetap"'>Conversions / Tracking - ResponseTap</option>
+                  <option value='select J,F where F contains "Google website call conversions"'>Conversions / Tracking - Google website call conversions</option>
+                  <option value='select J,F where F contains "Other call tracking"'>Conversions / Tracking - Other call tracking</option>
+                  <option value='select J,F where F contains "Custom URL parameters"'>Conversions / Tracking - Custom URL parameters</option>
+                  <option value='select J,F where F contains "Ad customisers (including countdown)"'>Ads - Ad customisers (including countdown)</option>
+                  <option value='select J,F where F contains "Google consumer ratings (NOT seller ratings)"'>Other - Google consumer ratings (NOT seller ratings)</option>
+                  <option value='select J,F where F contains "Drafts / Experiments"'>Other - Drafts / Experiments</option>
+                  <option value='select J,F where F contains "Target CPA / Target ROAS"'>Bidding - Target CPA / Target ROAS</option>
+                  <option value='select J,F where F contains "Scripts"'>Other - Scripts</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-gemini">Gemini</label>
+                <select class="form-control dropdown" id="dropdown-gemini">
+                  <option value='select J' selected></option>
+                  <option value='select * where C contains "Gemini"'>Any Gemini</option>
+                  <option value='select * where C contains "Conversion Tracking"'>Conversion Tracking</option>
+                  <option value='select * where C contains "native"'>Native</option>
+                  <option value='select * where C contains "Search"'>Search</option>
+                  <option value='select * where C contains "sponsored email"'>Sponsored Emails</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-analytics">Analytics / Bidding / Data management</label>
+                <select class="form-control dropdown" id="dropdown-analytics">
+                  <option value='select J' selected></option>
+                  <option value='select J,G where G contains "Adobe"'>Adobe Analytics</option>
+                  <option value='select J,G where G contains "Firebase"'>Firebase</option>
+                  <option value='select J,G where G contains "Kenshoo"'>Kenshoo</option>
+                  <option value='select J,G where G contains "Marin"'>Marin</option>
+                  <option value='select J,G where G contains "Omniture"'>Omniture</option>
+                  <option value='select J,G where G contains "Optimizely"'>Optimizely</option>
+                  <option value='select J,G where G contains "Tag Manager"'>Tag manager</option>
+                  <option value='select J,G where G contains "Tealium"'>Tealium</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-platforms">Other platforms</label>
+                <select class="form-control dropdown" id="dropdown-platforms">
+                  <option value='select J' selected></option>
+                  <option value='select J,H where H contains "Amazon"'>Amazon</option>
+                  <option value='select J,H where H contains "Baidu"'>Baidu</option>
+                  <option value='select J,H where H contains "LinkedIn"'>LinkedIn</option>
+                  <option value='select J,H where H contains "Pinterest"'>Pinterest</option>
+                  <option value='select J,H where H contains "Snapchat"'>Snapchat</option>
+                  <option value='select J,H where H contains "Tumblr"'>Tumblr</option>
+                  <option value='select J,H where H contains "Twitter"'>Twitter</option>
+                  <option value='select J,H where H contains "Yandex"'>Yandex</option>
+                  <option value='select J,H where H contains "YouTube"'>YouTube</option>
+                  <option value='select J,H where H contains "YouTube Shopping"'>YouTube Shopping</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dropdown-other">Other</label>
+                <select class="form-control dropdown" id="dropdown-other">
+                  <option value='select J' selected></option>
+                  <option value='select J,F where F contains "Google Docs Script"'>Google Docs Script (not AdWords scripts)</option>
+                  <option value='select J,F where F contains "Non adwords remarketing"'>Non AdWords remarketing (eg Criteo)</option>
+                  <option value='select J,F where F contains "Brand uplift survey"'>Brand uplift survey</option>
+                  <option value='select J,F where F contains "Data Driven Attribution"'>Data Driven Attribution</option>
+                  <option value='select J,F where F contains "Other Attribution"'>Other Attribution</option>
+                  <option value='select J,F where F contains "Forecasting"'>Forecasting</option>
+                </select>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mybtn">
+      <button id="mybtn" onclick="show()" type="submit">Download</button>
+      <h4 id="mytext">processing...</h3>
+        <img class="myimg2" src="https://cdn.dribbble.com/users/22242/screenshots/4382221/media/58d43cd7e889ce3f9e5b0d5b228058df.gif">
+    </div>
+    </form>
+  </div>
+
+  <!-- gif img -->
+  <div class="container">
+    <div class="myimg1">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632/217c8e56455943.59af723b83f44.gif">
+    </div>
+
+  </div>
+
+  <script>
+    function show() {
+      let img = document.querySelector(".myimg2")
+      let wait = document.querySelector("#mytext")
+      wait.style = "display:block"
+      img.style = "display:inline-block;";
+    };
+  </script>
+</body>
+
+</html>
