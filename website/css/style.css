@@ -1,0 +1,121 @@
+:root{
+  --mycolor:#262626;
+  --mycolor2:#8CC7A1;
+  --mycolor3:#74226C;
+  --mycolor4:#98A6D4;
+  
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif  !important;
+  
+}
+html{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.card {
+  margin-bottom: 32px;
+  
+}
+
+.col{
+  background-color: var(--mycolor4)  !important;
+}
+tr.highlighted {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+.card-header{
+  background-color: var(--mycolor2)  !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-group select{
+  color: var(--mycolor3) !important;
+}
+.jumbotron-fluid{
+  background: var(--mycolor4)  !important;
+}
+.display-3{
+  color:var(--mycolor2);
+  font-size:30px;
+  font-style: bold;
+  font-family:"Josefin Sans"  !important;
+  text-align: center;
+  border:5px solid var(--mycolor2);
+  border-radius:50px;
+  background-color:#fff;
+}
+.lead{
+  color: var(--mycolor3);
+  font-size:20px  !important;
+  font-weight: bold !important;
+  text-align:center;
+}
+.myimg1{
+  margin-top:20px;
+  background-color:#ccc;
+}
+.myimg1 img{
+  width:100%;
+  height:100%;
+}
+
+
+.mybtn{
+  padding-bottom:100px;
+}
+.mybtn #mybtn{
+  position:relative;
+  left:220px;
+  top:5px;
+  width:230px;
+  padding:10px 0;
+  border-radius:30px;
+  border:none;
+  font-family:"Josefin Sans";
+  background-color: var(--mycolor4);
+}
+
+.mybtn #mybtn:hover{
+  background-color: var(--mycolor2);
+}
+
+.mybtn  #mytext{
+  color: var(--mycolor2);
+  position:relative;
+  width:150px;
+  top:60px;
+  left:280px;
+  display:none;
+}
+.mybtn .myimg2{
+  position:relative;
+  width:200px;
+  height:100%;
+  left:240px;
+  top:100px;
+  display:none;
+}
+
+
+@media screen and (max-width:480px){
+  .mybtn #mybtn{
+    width:150px;
+    top:10px;
+    left:90px;
+  }
+  .mybtn .myimg2{
+    left:70px;
+  }
+  
+ .mybtn #mytext{
+   left:110px;
+ }
+  
+  hr{
+    margin-left:70px  !important;
+  }
+}
